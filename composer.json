@@ -1,0 +1,24 @@
+{
+    "name": "yidas/yii2-bower-asset",
+    "description": "The easy way to install and update Bower for Yii2 via Composer",
+    "keywords": ["yii2", "framework", "bower", "bower asset"],
+    "type": "yii2-extension",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/yidas/yii2-bower-asset/issues?state=open",
+        "source": "https://github.com/yidas/yii2-bower-asset"
+    },
+    "provide": {
+        "bower-asset/jquery": "*",
+        "bower-asset/jquery.inputmask": "*",
+        "bower-asset/punycode": "*",
+        "bower-asset/yii2-pjax": "*",
+        "bower-asset/bootstrap": "*",
+        "bower-asset/typeahead.js": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "yidas\\yii2BowerAsset\\": ""
+        }
+    }
+}
