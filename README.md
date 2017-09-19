@@ -6,7 +6,7 @@
     <br>
 </p>
 
-Bower Assets for Yii 2 core provided via Composer repository
+Bower Assets for Yii 2 app provided via Composer repository
 
 [![Latest Stable Version](https://poser.pugx.org/yidas/yii2-bower-asset/v/stable?format=flat-square)](https://packagist.org/packages/yidas/yii2-bower-asset)
 [![Latest Unstable Version](https://poser.pugx.org/yidas/yii2-bower-asset/v/unstable?format=flat-square)](https://packagist.org/packages/yidas/yii2-bower-asset)
@@ -15,7 +15,7 @@ Bower Assets for Yii 2 core provided via Composer repository
 FEATURES
 --------
 
-***1. Install or update Bower assets for Yii2 core via Composer without any plugin***
+***1. Install or update Bower assets for Yii 2 app via Composer without any plugin***
 
 ***2. Prevent the error of Bower packages when using Composer install & update for Yii2***
 
@@ -27,7 +27,13 @@ FEATURES
 
 > Got tired of [fxp/composer-asset-plugin](https://github.com/fxpio/composer-asset-plugin)? It's a good project with nice idea and good implementation. But it has some issues: it slows down composer update a lot and requires global installation, so affects all projects. Also there are Travis and Scrutinizer integration special problems, that are a bit annoying.
 
-According to [Asset Packagist](https://asset-packagist.org/), this package goals to install Bower for Yii2 core by original Composer repository, and makes Bower and Composer separated.
+Compare with [Asset Packagist](https://asset-packagist.org/), this package goals to install the Bower assets for Yii2 app by original Composer repository, and makes Bower and Composer separated.
+
+### Supported Packages
+
+This Bower asset supports Yii 2 core(`yiisoft/yii2`) such as widgets or validators.
+
+For the Yii 2 application templates(`yii2-app-basic` & `yii2-app-advanced`), this also supports `yii2-bootstrap` and others for dependent packages such as `yii2-debug` & `yii2-gii`.
 
 ---
 
@@ -43,8 +49,8 @@ Example `composer.json`:
 ```
 "require": {
     "php": ">=5.4.0",
-    "yidas/yii2-bower-asset": "~2.0.0",
-    "yiisoft/yii2": "~2.0.0",
+    "yidas/yii2-bower-asset": "~2.0.5",
+    "yiisoft/yii2": "~2.0.5",
     "yiisoft/yii2-bootstrap": "~2.0.0"
 }
 ```
