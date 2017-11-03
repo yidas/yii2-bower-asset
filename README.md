@@ -6,7 +6,7 @@
     <br>
 </p>
 
-Bower Assets for Yii 2 app provided via Composer repository
+Yii 2 official Composer repository solution for Bower Assets
 
 [![Latest Stable Version](https://poser.pugx.org/yidas/yii2-bower-asset/v/stable?format=flat-square)](https://packagist.org/packages/yidas/yii2-bower-asset)
 [![Latest Unstable Version](https://poser.pugx.org/yidas/yii2-bower-asset/v/unstable?format=flat-square)](https://packagist.org/packages/yidas/yii2-bower-asset)
@@ -15,7 +15,7 @@ Bower Assets for Yii 2 app provided via Composer repository
 FEATURES
 --------
 
-***1. Install or update Bower assets for Yii 2 app via Composer without any plugin***
+***1. Install or update Bower assets for Yii 2 app via Composer without any plugin (Even v2.0.13 above)***
 
 ***2. Prevent the error of Bower packages when using Composer install & update for Yii2***
 
@@ -79,7 +79,20 @@ $config = [
 > [Install via Alias Setting Installer](#install-via-alias-setting-installer)
 
 
-### 3. Enjoy It
+### 3. Remove Composer Asset-Packagist Repositories 
+
+If you are using the version 2.0.13 or higher of Yii, you may remove the `repositories` setting of `composer.json` to use original Composer repository.
+
+Example segament to delete in `composer.json` :
+
+```
+"repositories": [
+    {
+        "type": "composer",
+        "url": "https://asset-packagist.org"
+    }
+]
+```
 
 *Finally*, command `composer update` then enjoy it.
 
