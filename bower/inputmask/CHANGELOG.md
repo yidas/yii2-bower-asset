@@ -1,6 +1,38 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [3.3.10 - 2017-10-16]
+### Updates
+- Fix changes from PR #1664
+
+## [3.3.9 - 2017-10-10]
+### Updates
+- enhance inputfallback (Android)
+
+## [3.3.8 - 2017-08-24]
+### added
+- added \uFF11-\uFF19 character range to 9 definition #1606
+- importDataAttributes option #1633
+- add dot support in regex #1651
+
+### Updates
+- pass inputmask object in the callbacks
+- colorMask enhancement: better positioning and more controllable via inputmask.css
+- remove maxLength attribute on android #1490
+- enhance inputfallback (Android)
+
+### Fixes
+- Mask appear when I press TAB & showMaskOnFocus: false, showMaskOnHover: false #1198
+- DependencyLib.Event CustomEvent #1642
+- Wrong initial cursor position with Numeric and Prefix #1578
+- Currency mask works incorrectly on Android Chrome v58 #1617
+- Can't input character at the end if it's also a placeholder on Android #1648
+- colorMask - incorrect positioning #1421
+- Object doesn't support property or method '_valueGet' in version 3.3.7 #1645
+- Usage of numericInput in data-inputmask causes reversed value #1640
+- Numeric suffix makes radixPoint disappear on preset value #1638
+- Cannot delete after fill up all the mask Android Chrome browser Jsfiddle #1637
+
 ## [3.3.7 - 2017-06-09]
 ### added
 - allow custom operation in casing option by callback #1565
