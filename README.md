@@ -6,28 +6,29 @@
     <br>
 </p>
 
-Yii 2 official Composer repository solution for Bower Assets
+Yii 2 core Bower packages for official Composer repository installation
 
 [![Latest Stable Version](https://poser.pugx.org/yidas/yii2-bower-asset/v/stable?format=flat-square)](https://packagist.org/packages/yidas/yii2-bower-asset)
-[![Latest Unstable Version](https://poser.pugx.org/yidas/yii2-bower-asset/v/unstable?format=flat-square)](https://packagist.org/packages/yidas/yii2-bower-asset)
 [![License](https://poser.pugx.org/yidas/yii2-bower-asset/license?format=flat-square)](https://packagist.org/packages/yidas/yii2-bower-asset)
+[![Total Downloads](https://poser.pugx.org/yidas/yii2-bower-asset/downloads?format=flat-square)](https://packagist.org/packages/yidas/yii2-bower-asset)
+[![Monthly Downloads](https://poser.pugx.org/yidas/yii2-bower-asset/d/monthly?format=flat-square)](https://packagist.org/packages/yidas/yii2-bower-asset)
 
 FEATURES
 --------
 
-***1. Install or update Bower assets for Yii 2 app via Composer without any plugin (Even v2.0.13 above)***
+- ***Install or update Bower assets** for Yii 2 app via Composer **without any plugin** (Even v2.0.13 above)*
 
-***2. Prevent the error of Bower packages when using Composer install & update for Yii2***
+- ***Prevent the error of Bower packages** when using Composer install & update for Yii2*
 
-> Problem 1
->
->   \- yiisoft/yii2 2.0.12 requires bower-asset/jquery 2.2.*@stable | 2.1.*@stable | 1.11.*@stable | 1.12.*@stable -> no matching package found.
+  > Problem 1
+  >
+  >   \- yiisoft/yii2 2.0.12 requires bower-asset/jquery 2.2.*@stable | 2.1.*@stable | 1.11.*@stable | 1.12.*@stable -> no matching package found.
 
-***3. Official install way by using original Composer repository***
+- ***Official install way** by using original Composer repository*
 
 > Got tired of [fxp/composer-asset-plugin](https://github.com/fxpio/composer-asset-plugin)? It's a good project with nice idea and good implementation. But it has some issues: it slows down composer update a lot and requires global installation, so affects all projects. Also there are Travis and Scrutinizer integration special problems, that are a bit annoying.
 
-Compare with [Asset Packagist](https://asset-packagist.org/), this package goals to install the Bower assets for Yii2 app by original Composer repository, and makes Bower and Composer separated.
+Compare with [Asset Packagist](https://asset-packagist.org/), this package only for installing the Bower packages for Yii2 app by using original Composer repository, which goals to makes Bower separated from Composer .
 
 ### Supported Packages
 
@@ -55,7 +56,7 @@ Example `composer.json`:
 }
 ```
 
-After above setting, it's same as [yidas/yii2-composer-bower-skip](https://github.com/yidas/yii2-composer-bower-skip) which makes composer to install and update for Yii2 without Bower plugin.
+After above setting, you could run `composer require yidas/yii2-bower-asset` to install the package. It's same as [yidas/yii2-composer-bower-skip](https://github.com/yidas/yii2-composer-bower-skip) which makes composer to install and update for Yii2 without Bower plugin.
 
 
 ### 2. Set Up Application Config
@@ -174,8 +175,8 @@ LIMITATION
 
 ***Do not use Bower mixed with Composer project*** is the goal of this package.
 
-> 1. The variety of Bower packages are just for Yii2 cores. 
->
-> 2. The versions of Bower packages are fixed to current Yii2 version.
->
-> 3. If you are requiring other Bower packages in Yii2, you could set the config fit to this package or not to use. 
+1. The variety of Bower packages are just for Yii2 cores. 
+
+2. The versions of Bower packages are fixed to current Yii2 version.
+
+3. If you are requiring other Bower packages in Yii2, you could set the config fit to this package or not to use. 
